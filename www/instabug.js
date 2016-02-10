@@ -31,7 +31,7 @@ var getLocales = function () {
 		japanese: 'japanese',
 		korean: 'korean',
 		polish: 'polish',
-		portugueseBrazil: 'portugueseBrazil'.
+		portugueseBrazil: 'portugueseBrazil',
 		russian: 'russian',
 		spanish: 'spanish',
 		swedish: 'swedish',
@@ -55,7 +55,7 @@ Instabug.invoke = function (mode, success, error) {
 	var validatedMode = getInvocationModes()[mode];
 
 	if (validatedMode) {
-		exec(success, error, 'IBPlugin', 'invoke', [ validatedMode ]);	
+		exec(success, error, 'IBPlugin', 'invoke', [ validatedMode ]);
 	} else {
 		exec(success, error, 'IBPlugin', 'invoke', []);
 		console.log('Could not apply mode to invocation - "' + mode + '" is not valid.');
