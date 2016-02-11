@@ -265,7 +265,7 @@
     NSString* log = [command argumentAtIndex:0];
     
     if ([log length] > 0) {
-        [Instabug IBGLog:log withArguments:nil];
+        IBGLog(log);
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     } else {
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR
