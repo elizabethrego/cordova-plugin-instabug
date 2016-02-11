@@ -17,12 +17,12 @@ import com.instabug.library.Feature;
 
 public class IBPluginActivity extends CordovaActivity
 {
-    // Reference to builder 
+    // Reference to builder
     private Instabug.Builder builder;
 
     /**
      * Called when activity starts. Initializes Instabug.
-     * 
+     *
      * @param savedInstanceState
      *        Saved instance state
      */
@@ -38,7 +38,7 @@ public class IBPluginActivity extends CordovaActivity
         if (event != null) {
             // Initialize builder with invocation event if possible
             builder = new Instabug.Builder(
-                this.getApplication(), 
+                this.getApplication(),
                 options.getString("token"),
                 event
             );
@@ -63,26 +63,26 @@ public class IBPluginActivity extends CordovaActivity
     /**
      * Convenience method for parsing and setting
      * whether the email field is required.
-     * 
+     *
      * @param required
      *        String representation of boolean required
      */
     private void setEmailFieldRequired(String required) {
-        if (enabled != null && enabled.length() > 0) {
-            builder.setEmailFieldRequired(Boolean.parseBoolean(enabled));
+        if (required != null && required.length() > 0) {
+            builder.setEmailFieldRequired(Boolean.parseBoolean(required));
         }
     }
 
     /**
      * Convenience method for parsing and setting
      * whether the comment field is required.
-     * 
+     *
      * @param required
      *        String representation of boolean required
      */
     private void setCommentFieldRequired(String required) {
-        if (enabled != null && enabled.length() > 0) {
-            builder.setCommentFieldRequired(Boolean.parseBoolean(enabled));
+        if (required != null && required.length() > 0) {
+            builder.setCommentFieldRequired(Boolean.parseBoolean(required));
         }
     }
 
@@ -142,7 +142,7 @@ public class IBPluginActivity extends CordovaActivity
      * Convenience method for parsing and setting
      * whether the debug logs from the Instabug SDK
      * are should be printed to LogCat.
-     * 
+     *
      * @param enabled
      *        String representation of boolean enabled
      */
@@ -156,7 +156,7 @@ public class IBPluginActivity extends CordovaActivity
      * Convenience method for parsing and setting
      * whether the console logs should be added to
      * reports.
-     * 
+     *
      * @param enabled
      *        String representation of boolean enabled
      */
@@ -172,7 +172,7 @@ public class IBPluginActivity extends CordovaActivity
      * Convenience method for parsing and setting
      * whether the debug logs from the Instabug SDK
      * should be added to reports.
-     * 
+     *
      * @param enabled
      *        String representation of boolean enabled
      */
@@ -188,7 +188,7 @@ public class IBPluginActivity extends CordovaActivity
      * Convenience method for parsing and setting
      * whether tracking user steps should be enabled
      * by the SDK.
-     * 
+     *
      * @param enabled
      *        String representation of boolean enabled
      */
@@ -204,7 +204,7 @@ public class IBPluginActivity extends CordovaActivity
      * Convenience method for parsing and setting
      * whether crash reporting should be enabled
      * by the SDK.
-     * 
+     *
      * @param enabled
      *        String representation of boolean enabled
      */
@@ -220,7 +220,7 @@ public class IBPluginActivity extends CordovaActivity
      * Convenience method for parsing and setting
      * whether in-app messaging should be enabled
      * by the SDK.
-     * 
+     *
      * @param enabled
      *        String representation of boolean enabled
      */
@@ -236,7 +236,7 @@ public class IBPluginActivity extends CordovaActivity
      * Convenience method for parsing and setting
      * whether conversion sounds should be enabled
      * by the SDK.
-     * 
+     *
      * @param enabled
      *        String representation of boolean enabled
      */
@@ -250,7 +250,7 @@ public class IBPluginActivity extends CordovaActivity
      * Convenience method for parsing and setting
      * whether push notifications should be enabled
      * by the SDK.
-     * 
+     *
      * @param enabled
      *        String representation of boolean enabled
      */
@@ -266,7 +266,7 @@ public class IBPluginActivity extends CordovaActivity
      * Convenience method for parsing and setting
      * whether the intro dialog should be shown the
      * first time the app is opened.
-     * 
+     *
      * @param enabled
      *        String representation of boolean enabled
      */
@@ -279,7 +279,7 @@ public class IBPluginActivity extends CordovaActivity
     /**
      * Convenience method for parsing and setting
      * whether user data should be added to reports.
-     * 
+     *
      * @param enabled
      *        String representation of boolean enabled
      */
@@ -295,7 +295,7 @@ public class IBPluginActivity extends CordovaActivity
      * Convenience method for parsing and setting
      * whether the desired color theme for the SDK
      * invocation.
-     * 
+     *
      * @param theme
      *        String representation of IBGColorTheme
      */
@@ -310,7 +310,7 @@ public class IBPluginActivity extends CordovaActivity
     /**
      * Wrapper method for parsing and setting all
      * provided options.
-     * 
+     *
      * @param opts
      *        JSONObject representation of options
      */
