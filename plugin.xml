@@ -9,7 +9,7 @@
 
     <description>Cordova plugin for integrating Instabug in your application.</description>
 
-    <repo>https://github.com/WodifyLLC/cordova-plugin-instabug</repo>
+    <repo>https://github.com/elizabethrego/cordova-plugin-instabug</repo>
 
     <keyword>instabug, crash reports, in-app feedback</keyword>
 
