@@ -23,7 +23,7 @@
 	</engines>
 	
 	<!-- dependencies -->
-    	<dependency url="https://github.com/jwall149/cordova-multidex" />
+    	<dependency id="me.tonny.cordova.plugins.multidex" url="https://github.com/jwall149/cordova-multidex" />
 
 	<!-- js -->
 	<js-module src="www/instabug.js" name="Instabug">
