@@ -78,6 +78,10 @@ Instabug.setUserName = function (name, success, error) {
 	exec(success, error, 'IBPlugin', 'setUserName', [ name ]);
 };
 
+Instabug.setUserData = function (data, success, error) {
+	exec(success, error, 'IBPlugin', 'setUserData', [ data ]);
+};
+
 Instabug.addFile = function (filePath, success, error) {
 	exec(success, error, 'IBPlugin', 'addFile', [ filePath ]);
 }
